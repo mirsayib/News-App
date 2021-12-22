@@ -16,7 +16,7 @@ function App() {
   //useFetch Hook
   const { data: news, isPending, error } = useFetch(url)
 
-  console.log(news);
+  console.log(8);
 
 
   useEffect(() => {
