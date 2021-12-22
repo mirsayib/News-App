@@ -11,7 +11,7 @@ function App() {
   const [country, setCountry] = useState('in')
   const [source, setSource] = useState('')
   const [query, setQuery] = useState('')
-  const [url, setUrl] = useState(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=036b7aff2f27464085aabd2fa1f34314`)
+  const [url, setUrl] = useState(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=0ff0b42ee9954d06803c3e6a809bcc38`)
 
   //useFetch Hook
   const { data: news, isPending, error } = useFetch(url)
@@ -21,9 +21,9 @@ function App() {
 
   useEffect(() => {
       if(source !== ''){
-          setUrl(`https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=036b7aff2f27464085aabd2fa1f34314`)
+          setUrl(`https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=0ff0b42ee9954d06803c3e6a809bcc38`)
       }else{
-        setUrl(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=036b7aff2f27464085aabd2fa1f34314`)
+        setUrl(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=0ff0b42ee9954d06803c3e6a809bcc38`)
   
       }   
   }, [source, category, country])

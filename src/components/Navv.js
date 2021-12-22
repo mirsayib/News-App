@@ -12,7 +12,7 @@ const Navv = ({setCountry, setSource, setQuery, query, setUrl}) => {
     }
 
     const handleClick = () => {
-        setUrl(`https://newsapi.org/v2/top-headlines?q=${query}&apiKey=036b7aff2f27464085aabd2fa1f34314`)
+        setUrl(`https://newsapi.org/v2/top-headlines?q=${query}&apiKey=0ff0b42ee9954d06803c3e6a809bcc38`)
         setQuery('')
     }
 
